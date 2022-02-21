@@ -127,7 +127,38 @@ add_action( 'widgets_init', 'dice_widgets_init' );
  * Enqueue scripts and styles.
  */
 function dice_scripts() {
-	wp_enqueue_style( 'dice-style', get_stylesheet_uri(), array(), DICE_VERSION );
+	wp_enqueue_style( 
+		'dice-style', 
+		get_stylesheet_uri(), 
+		array(), 
+		DICE_VERSION 
+	);
+
+	wp_enqueue_style( 
+		'foundation-style', 
+		get_stylesheet_uri() . '/assets/css/vendor/foundation.min.css', 
+		array(), 
+		'6.7.4'
+	);
+
+	wp_enqueue_style( 
+		'what-input-script', 
+		get_stylesheet_uri() . '/assets/js/vendor/what-input.js', 
+		array( 'jquery' ), 
+		'5.2.10',
+		true
+	);
+
+
+	wp_enqueue_style( 
+		'foundation-script', 
+		get_stylesheet_uri() . '/assets/js/vendor/foundation.min.js', 
+		array( 'jquery', 'what-input-script' ), 
+		'6.7.4',
+		true
+	);
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
