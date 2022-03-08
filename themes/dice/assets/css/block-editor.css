@@ -17,8 +17,88 @@
     margin-right:auto;
 }
 .custom-logo{
-    width: 180px;
+    width: 150px;
 }
 .wp-block-image{
     width: 100%;    
+}
+
+.entry-title {
+    display: none;
+}
+
+/* HomeSetup */
+.wp-image-64 {
+    width: 100%;
+ 
+}
+.wp-image-62 {
+    width: 39%;
+    margin-top: -239px;   
+    margin-left: 100px;
+}
+.wp-image-82 {
+    width: 100%;
+   margin-top: 50px; 
+   margin-left: -180px;
+}
+.wp-image-89 {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10px; 
+    margin-bottom: 50px;
+ }
+.wp-image-84 {
+    width: 100%;
+    margin-top: 50px; 
+    margin-left: 180px;
+ }
+.has-text-align-center {
+    text-align: center;
+    margin-top: 43px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.has-text-align-right {
+    text-align: right;
+    font-size: 33px;
+    margin-top: 70px;
+}
+.has-text-align-left, .p  {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 820px;
+}
+.wp-container-6226a8d0c6f49, .wp-block-buttons {
+    margin-left: -64px;
+}
+.wp-block-search__label, .wp-block-search__inside-wrapper{
+    display: none;
+}
+
+/*== Contact Setup ==*/
+.contactheading {
+    margin-top: 30px;
+    text-decoration: 4px underline;
+}
+.paragraph {
+    float: right;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*== About Setup ==*/
+.about-heading2 {
+    text-decoration: 4px underline;
+}
+
+.about-heading {
+    margin-top: 30px;
+}
+
+.icon-heading {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
 }
