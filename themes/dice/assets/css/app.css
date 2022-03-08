@@ -1,0 +1,95 @@
+/* Header Setup */
+.site-branding {
+    border-bottom: 3px solid black;
+}
+
+/* Custom Logo */
+.custom-logo {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.site-title, .site-description, .menu-toggle {
+    display: none;
+}
+
+#primary-menu {
+    font-family: 'Dederon Sans';
+    font-size: 24px;
+    float: right;
+    margin-top: -90px;
+}
+
+#primary-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: space-between;
+    margin-left: -15%;
+}
+
+#primary-menu a {
+    color: black;
+    margin-top: 10px;
+}
+
+
+/*== FOOTER ==*/
+
+footer {
+    width: 100%;
+    height: 130px;
+    color: white;
+    display:flex;
+    padding:1rem 0;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #343333;  
+}
+
+.footer section {
+    width: 100%;
+    vertical-align: top;
+    padding: 1rem 1rem;
+}
+
+.footer section h3 {
+    color:var(--white); 
+    text-decoration: 2px underline;
+}
+
+.footer section a {
+    color:var(--white);
+}
+#mainlink {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: -150px;
+    margin-left: -150px;
+    color:var(--white); 
+}
+
+#mainlinkone {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: -205px;
+    margin-left: 250px;
+    color:var(--white); 
+}
+
+#mainlinktwo {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: -135px;
+    margin-left: 650px;
+    color:var(--white); 
+}
+
+.copyright-text {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
