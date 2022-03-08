@@ -6,16 +6,22 @@
 .wp-block-quote.is-style-fancy-quote{
     color: red;
 }
-.entry-content > *{
+.entry-content > *:not(.woocommerce){
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
-.alignwide{
+.entry-content > *.alignwide,
+.alignwide {
     width: 1200px;
     margin-left:auto;
     margin-right:auto;
 }
+.entry-content > *.alignfull,
+.alignfull {
+  max-width: 100%;
+}
+
 .custom-logo{
     width: 150px;
 }
