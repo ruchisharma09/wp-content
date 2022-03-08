@@ -12,21 +12,29 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dice' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'dice' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Copyright, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'dice' ), 'dice', '<a href="http://sharmaruchi.ca/">Ruchi Sharma</a>' );
-				?>
-		</div><!-- .site-info -->
+	   <div class="footer">
+		   <section id="mainlink">
+			<h3>Quick Links</h3>
+				<a>Home</a>
+				<a>Shop</a>
+				<a>Blog</a>
+				<a>About Us</a>
+				<a>Contact Us</a>
+		   </section>
+		   <section id="mainlinkone">
+			<h3>About Us</h3>
+				<a>Privacy Policy</a>
+				<a>Refund and Return</a>
+		   </section>
+		   <section id="mainlinktwo">
+			<h3>Contact Us</h3>
+				<a>2000 Simcoe St. North Oshawa, Ontario S1Q 3E1</a>
+				<a>123-456-7890</a>
+		   </section>
+	   </div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+	<div class="copyright-text">Copyright © 2022 | DICE</div>
 
 <?php wp_footer(); ?>
 
