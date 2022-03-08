@@ -146,6 +146,11 @@ function dice_scripts() {
 		get_template_directory_uri() . '/assets/css/app.css', 
 	);
 
+	wp_enqueue_style( 
+		'woocommerce-style', 
+		get_template_directory_uri() . '/assets/css/woocommerce.css', 
+	);
+
 	wp_enqueue_script( 
 		'what-input-script', 
 		get_template_directory_uri(). '/assets/js/vendor/what-input.js', 
