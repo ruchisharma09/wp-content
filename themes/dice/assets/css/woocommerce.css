@@ -85,3 +85,11 @@ label {
     background-color: rgb(0, 0, 0) !important;
     color: rgb(255, 255, 255) !important;
 }
+.woocommerce-order {
+    margin-top: 30px;
+}
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received,
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details.{
+    font-family: 'Dederon Sans';
+    font-size: 18px;
+}
