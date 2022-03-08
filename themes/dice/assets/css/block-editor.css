@@ -6,18 +6,17 @@
 .wp-block-quote.is-style-fancy-quote{
     color: red;
 }
-.entry-content > *:not(.woocommerce){
+.entry-content > *{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
-.entry-content > *.alignwide,
+
 .alignwide {
     width: 1200px;
     margin-left:auto;
     margin-right:auto;
 }
-.entry-content > *.alignfull,
 .alignfull {
   max-width: 100%;
 }
@@ -36,7 +35,7 @@
 /* HomeSetup */
 .wp-image-64 {
     width: 100%;
- 
+    margin-top: 30px;
 }
 .wp-image-62 {
     width: 39%;
@@ -62,6 +61,7 @@
 .has-text-align-center {
     text-align: center;
     margin-top: 43px;
+    font-size: 33px;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -107,4 +107,7 @@
     font-size: 28px;
     text-align: center;
     font-weight: bold;
+}
+.nav-next, .comment-reply-title, .logged-in-as, .required, #comment, .form-submit, #label {
+    display: none;
 }
