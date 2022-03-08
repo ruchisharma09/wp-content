@@ -89,7 +89,9 @@ label {
     margin-top: 30px;
 }
 .woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received,
-.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details.{
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details{
     font-family: 'Dederon Sans';
     font-size: 18px;
 }
+
+
