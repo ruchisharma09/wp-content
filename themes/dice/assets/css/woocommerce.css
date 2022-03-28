@@ -1,3 +1,4 @@
+
 /* Woocommerce Setup*/
 
 .cart-heading {
@@ -6,9 +7,11 @@
 }
 
 .shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
-    margin-top: 50px;
+    margin-top: 400px;
     border: 2px solid #222222;
     padding: 20px;
+    margin-top: 8%;
+    margin-left: -25%;
 }
 
 .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
@@ -74,7 +77,7 @@ label {
     margin-bottom: 60px;
 }
 #order_review_heading {
-    margin-top: -855px;
+    margin-top: -925px;
     margin-left: 600px;
     margin-bottom: 30px;
 }
@@ -94,4 +97,52 @@ label {
     font-size: 18px;
 }
 
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+  background-color: #ebebeb;
+  margin-right: 10%;
+  border-radius: none !important;
+}
 
+.woocommerce-ResetPassword, .lost_reset_password {
+    width: 80%;
+    background-color: #ebebeb;
+    padding: 3.2rem;
+}
+.woocommerce .columns-4 {
+    margin-right: 270px;
+}
+.cart-empty, .woocommerce-info {
+    margin-right: 320px;
+}
+.col-set2 {
+    margin-right: 300px;
+}
+.woocommerce-billing-fields {
+    margin-right: 100px; 
+}
+.cartheading {
+    margin-top: 70px;
+    margin-left: -40%;
+    text-decoration: 4px underline;
+}
+.cart-collaterals {
+    margin-top: 7%;
+    margin-left: -25%;
+}
+.woocommerce-result-count, .orderby {
+    font-family: 'Dederon Sans';
+    font-weight: 200;
+    font-size: 20px;
+}
+.products, .columns-4 {
+    margin-top: 2%;
+}
+.zoomImg {
+    margin-right: 8%;
+}
+.post-101, .product, .type-product, .status-publish, .has-post-thumbnail, .product_cat-tshirts, .first, .instock, .taxable, .shipping-taxable, .purchasable, .product-type-simple {
+    margin-top: 2%;
+}
+.entry-content {
+    margin-left: 5%;
+}

@@ -33,48 +33,48 @@
 }
 
 /* HomeSetup */
-.wp-image-64 {
+.wp-image-34 {
     width: 100%;
     margin-top: 30px;
+    margin-left: 5.5%;
 }
-.wp-image-62 {
+.wp-image-47 {
     width: 39%;
-    margin-top: -239px;   
-    margin-left: 100px;
+    margin-top: -188px;   
+    margin-left: 800px;
 }
-.wp-image-82 {
+.wp-image-60 {
     width: 100%;
    margin-top: 50px; 
-   margin-left: -180px;
+   margin-left: -140px;
 }
-.wp-image-89 {
+.wp-image-61 {
     width: 100%;
     margin-top: 50px;
-    margin-left: 10px; 
+    margin-left: 50px; 
     margin-bottom: 50px;
  }
-.wp-image-84 {
+.wp-image-62 {
     width: 100%;
     margin-top: 50px; 
-    margin-left: 180px;
+    margin-left: 240px;
  }
 .has-text-align-center {
     text-align: center;
-    margin-top: 43px;
+    margin-top: 10%;
     font-size: 33px;
     font-weight: bold;
     text-decoration: underline;
 }
-.has-text-align-right {
-    text-align: right;
+.has-text-align-left {
+    text-align: left;
     font-size: 33px;
     margin-top: 70px;
+    margin-left: 240px;
 }
-.has-text-align-left, .p  {
-    text-align: left;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 820px;
+.wp-container-622ba674ad9a2, .wp-block-buttons {
+    margin-top: -10%;
+
 }
 .wp-container-6226a8d0c6f49, .wp-block-buttons {
     margin-left: -64px;
@@ -86,23 +86,36 @@
 /*== Contact Setup ==*/
 .contactheading {
     margin-top: 30px;
+    margin-left: -30%;
     text-decoration: 4px underline;
 }
 .paragraph {
+    float: left;
+    font-size: 18px;
+    margin-left: 240px;
+    margin-top: 5px;
+}
+.entry-content {
     float: right;
-    font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
+    margin-right: 10%;;
 }
 
 /*== About Setup ==*/
 .about-heading2 {
     text-decoration: 4px underline;
+    margin-left: -30%;
 }
-
+.mission-head {
+    text-align: center;
+}
 .about-heading {
     margin-top: 30px;
+    margin-left: -30%;
 }
-
+.env-para {
+    padding-right: 10%;
+}
 .icon-heading {
     font-size: 28px;
     text-align: center;
@@ -111,3 +124,10 @@
 .nav-next, .comment-reply-title, .logged-in-as, .required, #comment, .form-submit, #label {
     display: none;
 }
+.comment-notes {
+    display: none;
+}
+#commentform {
+    display: none;
+}
+

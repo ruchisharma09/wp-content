@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer">
 	   <div class="footer">
 		   <section id="mainlink">
-			<h3>Quick Links</h3>
+			<h5>Quick Links</h5>
 				<a>Home</a>
 				<a>Shop</a>
 				<a>Blog</a>
@@ -22,17 +22,17 @@
 				<a>Contact Us</a>
 		   </section>
 		   <section id="mainlinkone">
-			<h3>About Us</h3>
+			<h5>About Us</h5>
 				<a>Privacy Policy</a>
 				<a>Refund and Return</a>
 		   </section>
 		   <section id="mainlinktwo">
-			<h3>Contact Us</h3>
+			<h5>Contact Us</h5>
 				<a>2000 Simcoe St. North Oshawa, Ontario S1Q 3E1</a>
 				<a>123-456-7890</a>
 		   </section>
 	   </div>
-	</footer><!-- #colophon -->
+	</footer>
 
 	<div class="copyright-text">Copyright © 2022 | DICE</div>
 
