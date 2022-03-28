@@ -30,6 +30,41 @@ function dice_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	$wp_customize->add_panel( 'dice_social_media', array(
+		'title' => esc_html__( 'Social Media', 'dice'),
+	) );
+
+	$wp_customize->add_section( 'dice_facebook', array(
+		'title' => esc_html__( 'Facebook', 'dice'),
+		'panel' => 'dice_social_media',
+	) );
+
+	$wp_customize->add_setting( 'dice_facebook_title' );
+
+	$wp_customize-> add_control( 'dice_facebook_title', array(
+		'label'       => 'Title',
+		'description' => 'Enter your Facebook profile title',
+		'type'        => 'url',
+		'section'     => 'dice_facebook',
+	) );
+
+	$wp_customize->add_setting( 'dice_facebook_url' );
+
+	$wp_customize-> add_control( 'dice_facebook_url', array(
+		'label'       => 'URL',
+		'description' => 'Enter your Facebook profile link',
+		'type'        => 'url',
+		'section'     => 'dice_facebook',
+	) );
+
+	$wp_customize->add_setting( 'dice_facebook_icon' );
+
+	$wp_customize-> add_control( new WP_Customize_Media_Control( $wp_customize ,'dice_facebook_icon', array(
+		'label'       => 'Icon',
+		'section'     => 'dice_facebook',
+	) ) );
+	
 }
 add_action( 'customize_register', 'dice_customize_register' );
 
