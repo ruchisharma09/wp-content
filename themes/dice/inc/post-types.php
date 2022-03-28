@@ -1,4 +1,9 @@
-<?php	
+<?php
+/**
+ * Functions which enhance the theme by creating custom post types
+ *
+ * @package Roll_Your_Dice
+ */	
 
 function dice_post_types() {
     $labels = array(
@@ -48,5 +53,3 @@ function dice_post_types() {
     register_post_type( 'dice_recipe', $args );
 }
 add_action( 'init', 'dice_post_types' );
-
-?>
