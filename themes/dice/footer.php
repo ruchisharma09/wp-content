@@ -19,7 +19,9 @@
 			'post_per_page' => 2
 		);
 
-		$recipe_query->have_posts() ) {
+		$recipe_query = new WP_Query( $recipe_args );
+
+		if ($recipe_query->have_posts() ) {
 			while ( $recipe_query->have_posts() ) {
 				$recipe_query->the_post();
 				the_post_thumbnail();
@@ -29,7 +31,7 @@
 			wp_reset_postdata();
 		}
 		?>
-		
+
 	   <div class="footer">
 		   <section id="mainlink">
 			<h5>Quick Links</h5>
