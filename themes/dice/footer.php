@@ -12,6 +12,24 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<?php
+		$recipe_args = array(
+			'post_type'     => array( 'dice_recipe'),
+			'post_status'   => 'publish',
+			'post_per_page' => 2
+		);
+
+		$recipe_query->have_posts() ) {
+			while ( $recipe_query->have_posts() ) {
+				$recipe_query->the_post();
+				the_post_thumbnail();
+				the_title( '<h3>', '</h3>' );
+				the_excerpt();
+			}
+			wp_reset_postdata();
+		}
+		?>
+		
 	   <div class="footer">
 		   <section id="mainlink">
 			<h5>Quick Links</h5>
