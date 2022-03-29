@@ -62,7 +62,7 @@
 			  <?php
 				while ( $recipe_query->have_posts()) {
 					$recipe_query->the_post();
-					the_title( '<h2>','</h2>' );
+					the_title( '<h4><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 					the_excerpt();
 					the_post_thumbnail();
 					?>
