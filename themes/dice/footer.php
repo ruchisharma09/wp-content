@@ -16,7 +16,8 @@
 		$recipe_args = array(
 			'post_type'     => array( 'dice_recipe'),
 			'post_status'   => 'publish',
-			'post_per_page' => 2
+			'post_per_page' => 3,
+			'orderby'       => 'rand'
 		);
 
 		$recipe_query = new WP_Query( $recipe_args );
@@ -40,7 +41,33 @@
 		</div>
 		<?php } ?>
 
-	   <div class="footer">
+		<?php
+			$test_args = array( 
+						'post_type' => 'post',         
+						'post_status'=> 'publish',         
+						'posts_per_page' => 3 );
+						
+				$test_query = new WP_Query($test_args); 
+				
+				if($test_query->have_posts()){         
+						while ($test_query->have_posts()){             
+								$test_query->the_post();  
+					?>
+					<div class="cell large-3">
+						<?php
+							the_post_thumbnail( $size = ["300px","400px"], $attr = '' ); 
+						?>
+						<h5 class="query-heading"><a class="movie-title-home" href="<?php the_permalink() ?>"><?php the_title()?></a></h5>
+						<?php           
+							the_excerpt();
+						?>
+					</div>
+						<?php
+						}               
+				} 
+				?>
+
+	   <!-- <div class="footer">
 		   <section id="mainlink">
 			<h5>Quick Links</h5>
 				<a>Home</a>
@@ -51,7 +78,7 @@
 		   </section>
 		   <section id="mainlinkone">
 			<h5>About Us</h5>
-				<a>Privacy Policy</a>
+				<a >Privacy Policy</a>
 				<a>Refund and Return</a>
 		   </section>
 		   <section id="mainlinktwo">
@@ -60,7 +87,7 @@
 				<a>123-456-7890</a>
 		   </section>
 	   </div>
-	</footer>
+	</footer> -->
 
 	<div class="copyright-text">Copyright © 2022 | DICE</div>
 
