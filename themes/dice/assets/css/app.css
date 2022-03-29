@@ -2,7 +2,9 @@
 .site-branding {
     border-bottom: 3px solid black;
 }
-
+h1 {
+    text-align: center;
+}
 /* Custom Logo */
 .custom-logo {
     width: 5%;
@@ -84,7 +86,9 @@
 }
 
 .copyright-text {
+    border-top: 2px solid #222;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
 }
+
