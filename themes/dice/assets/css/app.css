@@ -1,21 +1,19 @@
-/* Header Setup */
+/*== Header Setup ==*/
 .site-branding {
     border-bottom: 3px solid black;
 }
 h1 {
     text-align: center;
 }
-/* Custom Logo */
+
+/*== Custom Logo ==*/
 .custom-logo {
     width: 5%;
     margin-top: 1%;
     margin-left: 5%;
 }
 
-.site-title, .site-description, .menu-toggle {
-    display: none;
-}
-
+/*== Primary-Menu ==*/
 #primary-menu {
     font-family: 'Dederon Sans';
     font-size: 20px;
@@ -28,7 +26,6 @@ h1 {
     display: flex;
     flex-direction: space-between;
 }
-
 #primary-menu a {
     color: black;
 }
@@ -37,58 +34,28 @@ h1 {
     margin-top: 4%;
     margin-left: -1%;
 }
+.site-title, .site-description, .menu-toggle {
+    display: none;
+}
 
 
 /*== FOOTER ==*/
-
 .footer section {
     width: 100%;
     vertical-align: top;
     padding: 1rem 1rem;
 }
-
 .footer section h5 {
     color:var(--white); 
     text-decoration: 2px underline;
 }
-
 .footer section a {
     font-size: 16px;
     color:var(--white);
 }
-#mainlink {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding-top: 3%;
-    margin-top: -60px;
-    margin-left: -150px;
-    padding-bottom: 10%;
-    color:var(--white); 
-}
-
-#mainlinkone {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    margin-top: -250px;
-    margin-left: 250px;
-    color:var(--white); 
-}
-
-#mainlinktwo {
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    margin-top: -125px;
-    margin-left: 650px;
-    color:var(--white); 
-}
-
 .copyright-text {
     border-top: 2px solid #222;
     text-align: center;
     line-height: 40px;
     font-size: 18px;
 }
-
