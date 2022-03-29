@@ -39,17 +39,6 @@
 
 /*== FOOTER ==*/
 
-footer {
-    width: 100%;
-    height: max-content;
-    color: white;
-    display:flex;
-    padding:3rem 0;
-    align-items:center;
-    justify-content: space-between;
-    background-color: #343333; 
-}
-
 .footer section {
     width: 100%;
     vertical-align: top;

@@ -4,7 +4,7 @@
     color: blue;
 }
 .wp-block-quote.is-style-fancy-quote{
-    color: red;
+    color: rgb(4, 151, 165);
 }
 .entry-content > *{
     width: 1000px;
@@ -129,5 +129,18 @@
 }
 #commentform {
     display: none;
+}
+
+.attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image {
+    width: 22%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+}
+
+
+p, li {
+    font-family: 'Euphemia UCAS';
+    font-weight: 200;
+    font-size: 20px;
 }
 
