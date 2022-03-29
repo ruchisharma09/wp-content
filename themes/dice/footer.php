@@ -53,11 +53,11 @@
 						while ($test_query->have_posts()){             
 								$test_query->the_post();  
 					?>
-					<div class="cell large-3">
+					<div class="cell large-4">
 						<?php
 							the_post_thumbnail( $size = ["300px","400px"], $attr = '' ); 
 						?>
-						<h5 class="query-heading"><a class="movie-title-home" href="<?php the_permalink() ?>"><?php the_title()?></a></h5>
+						<h4 class="query-heading"><a class="movie-title-home" href="<?php the_permalink() ?>"><?php the_title()?></a></h4>
 						<?php           
 							the_excerpt();
 						?>
