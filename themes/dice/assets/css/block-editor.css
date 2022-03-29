@@ -142,3 +142,9 @@ p, li {
     font-weight: 200;
     font-size: 20px;
 }
+
+.wpquery-post {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2%;
+}

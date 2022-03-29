@@ -53,11 +53,11 @@
 						while ($test_query->have_posts()){             
 								$test_query->the_post();  
 					?>
-					<div class="cell large-4">
+					<div class="cell large-4 wpquery-post">
+					<h2 class="query-heading"><a class="wp-post-title" href="<?php the_permalink() ?>"><?php the_title()?></a></h2>
 						<?php
 							the_post_thumbnail( $size = ["300px","400px"], $attr = '' ); 
 						?>
-						<h4 class="query-heading"><a class="movie-title-home" href="<?php the_permalink() ?>"><?php the_title()?></a></h4>
 						<?php           
 							the_excerpt();
 						?>
