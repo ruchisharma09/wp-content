@@ -27,6 +27,7 @@
 	<header id="masthead" class="site-header">
 
 		<div class="site-branding">
+			<!-- Customized Logo -->
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -48,6 +49,7 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dice' ); ?></button>
 			<!-- Made if statement primary-menu to display content-->
+			<!-- Only print menu-primary -->
 			<?php 
 			if ( has_nav_menu ( 'menu-primary' ) ) {
 			wp_nav_menu(
