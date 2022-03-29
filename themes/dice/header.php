@@ -47,7 +47,8 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dice' ); ?></button>
-			<?php
+			<!-- Made if statement primary-menu to display content-->
+			<?php 
 			if ( has_nav_menu ( 'menu-primary' ) ) {
 			wp_nav_menu(
 				array(
@@ -56,7 +57,7 @@
 				)
 			);
 		}
-
+           // Made if statement menu-social to display content
 			if ( has_nav_menu ( 'menu-social' ) ) {
 				wp_nav_menu(
 					array(
@@ -65,6 +66,8 @@
 				);
 	     	}
 			?>
+            
+			<!-- Social Media Linked -->
 			<ul class="social-media-menu">
 				<?php if ( ! empty( get_theme_mod( 'dice_facebook_url') ) && ! empty( get_theme_mod( 'dice_facebook_title') ) ) { ?>
 				<li>

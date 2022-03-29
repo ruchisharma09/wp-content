@@ -1,11 +1,9 @@
 
 /* Woocommerce Setup*/
-
 .cart-heading {
     margin-top: 30px;
     text-decoration: 4px underline;
 }
-
 .shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
     margin-top: 400px;
     border: 2px solid #222222;
@@ -13,7 +11,6 @@
     margin-top: 8%;
     margin-left: -25%;
 }
-
 .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
     width: 60%;
 }

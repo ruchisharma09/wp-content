@@ -48,7 +48,7 @@
 		<h2 class="custom-posts">Special Offers</h2>
     	<?php
 		$recipe_args = array(
-			'post_type'     => array( 'dice_offer'),
+			'post_type'     => array( 'dice_offer'), 
 			'post_status'   => 'publish',
 			'post_per_page' => 3,
 			'orderby'       => 'rand'
@@ -69,7 +69,7 @@
 				</div>
 				<?php
 				}
-				wp_reset_postdata();
+				wp_reset_postdata();/** wp_reset_postdata() to reset things */
 				?>
 		 </div>
 		<?php } ?>
