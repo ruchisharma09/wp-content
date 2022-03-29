@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer">
 		<?php
 		$recipe_args = array(
-			'post_type'     => array( 'dice_recipe'),
+			'post_type'     => array( 'dice_offer'),
 			'post_status'   => 'publish',
 			'post_per_page' => 3,
 			'orderby'       => 'rand'
