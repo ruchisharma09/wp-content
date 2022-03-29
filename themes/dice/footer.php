@@ -12,36 +12,11 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<?php
-		$recipe_args = array(
-			'post_type'     => array( 'dice_offer'),
-			'post_status'   => 'publish',
-			'post_per_page' => 3,
-			'orderby'       => 'rand'
-		);
+    <h2 class="custom-posts">Archives</h2>
 
-		$recipe_query = new WP_Query( $recipe_args );
-		if ($recipe_query->have_posts() ) {
-         ?>
-		 <div class="grid-container">
-		  <div class="grid-x grid-margin-x grid-margin-y">
-			  <?php
-				while ( $recipe_query->have_posts() ) {
-					$recipe_query->the_post();
-					the_post_thumbnail();
-					the_title( '<h3>', '</h3>' );
-					the_excerpt();
-					?>
-				</div>
-				<?php
-				}
-				wp_reset_postdata();
-				?>
-		 </div>
-		</div>
-		<?php } ?>
-
-		<?php
+	<!-- WP_Query custom posts -->
+	<!-- WP_Query  this is mainly used display blog posts in Footer -->
+	<?php
 			$test_args = array( 
 						'post_type' => 'post',         
 						'post_status'=> 'publish',         
@@ -54,7 +29,7 @@
 								$test_query->the_post();  
 					?>
 					<div class="cell large-4 wpquery-post">
-					<h2 class="query-heading"><a class="wp-post-title" href="<?php the_permalink() ?>"><?php the_title()?></a></h2>
+					<h2><a class="wp-post-title" href="<?php the_permalink() ?>"><?php the_title()?></a></h2>
 						<?php
 							the_post_thumbnail( $size = ["300px","400px"], $attr = '' ); 
 						?>
@@ -67,29 +42,40 @@
 				} 
 				?>
 
-	   <!-- <div class="footer">
-		   <section id="mainlink">
-			<h5>Quick Links</h5>
-				<a>Home</a>
-				<a>Shop</a>
-				<a>Blog</a>
-				<a>About Us</a>
-				<a>Contact Us</a>
-		   </section>
-		   <section id="mainlinkone">
-			<h5>About Us</h5>
-				<a >Privacy Policy</a>
-				<a>Refund and Return</a>
-		   </section>
-		   <section id="mainlinktwo">
-			<h5>Contact Us</h5>
-				<a>2000 Simcoe St. North Oshawa, Ontario S1Q 3E1</a>
-				<a>123-456-7890</a>
-		   </section>
-	   </div>
-	</footer> -->
+        	
+		<!-- Custom Post Type with active archive template -->
+		<!-- WP_Query  this is mainly used display offer posts in Footer -->
+		<h2 class="custom-posts">Special Offers</h2>
+    	<?php
+		$recipe_args = array(
+			'post_type'     => array( 'dice_offer'),
+			'post_status'   => 'publish',
+			'post_per_page' => 3,
+			'orderby'       => 'rand'
+		);
 
-	<div class="copyright-text">Copyright © 2022 | DICE</div>
+		$recipe_query = new WP_Query( $recipe_args );
+		if ($recipe_query->have_posts() ) {
+         ?>
+		  <div class="grid-container custom-posts">
+		   <div class=" grid-x grid-margin-x grid-margin-y custom-posts">
+			  <?php
+				while ( $recipe_query->have_posts()) {
+					$recipe_query->the_post();
+					the_title( '<h2>','</h2>' );
+					the_excerpt();
+					the_post_thumbnail();
+					?>
+				</div>
+				<?php
+				}
+				wp_reset_postdata();
+				?>
+		 </div>
+		<?php } ?>
+
+		<!-- Footer CopyText -->
+	    <div class="copyright-text">Copyright © 2022 | DICE</div>
 
 <?php wp_footer(); ?>
 
