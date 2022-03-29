@@ -12,6 +12,7 @@
     margin-right: auto;
 }
 
+/* Align wide or full */
 .alignwide {
     width: 1200px;
     margin-left:auto;
@@ -21,18 +22,17 @@
   max-width: 100%;
 }
 
+/* Custom Logo */
 .custom-logo{
     width: 150px;
 }
+/* Feature Image */
 .wp-block-image{
     width: 100%;    
 }
 
-.entry-title {
-    display: none;
-}
-
 /* HomeSetup */
+/* Images Setup */
 .wp-image-34 {
     width: 100%;
     margin-top: 30px;
@@ -79,9 +79,6 @@
 .wp-container-6226a8d0c6f49, .wp-block-buttons {
     margin-left: -64px;
 }
-.wp-block-search__label, .wp-block-search__inside-wrapper{
-    display: none;
-}
 
 /*== Contact Setup ==*/
 .contactheading {
@@ -120,6 +117,33 @@
     font-size: 28px;
     text-align: center;
     font-weight: bold;
+} 
+
+/* Footer Archives Content */
+.attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image {
+    width: 22%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+}
+p, li {
+    font-family: 'Euphemia UCAS';
+    font-weight: 200;
+    font-size: 20px;
+}
+.wpquery-post {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2%;
+}
+.custom-posts {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 2%;
+}
+
+/* Content Display None */
+.entry-title {
+    display: none;
 }
 .nav-next, .comment-reply-title, .logged-in-as, .required, #comment, .form-submit, #label {
     display: none;
@@ -130,28 +154,8 @@
 #commentform {
     display: none;
 }
-
-.attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image {
-    width: 22%;
-    margin-left: 30%;
-    margin-bottom: 2%;
+.wp-block-search__label, .wp-block-search__inside-wrapper{
+    display: none;
 }
 
-p, li {
-    font-family: 'Euphemia UCAS';
-    font-weight: 200;
-    font-size: 20px;
-}
-
-.wpquery-post {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 2%;
-}
-
-.custom-posts {
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 2%;
-}
 
